@@ -5,7 +5,8 @@
 # TO_BUILD:       docker build -rm -t registry .
 # TO_RUN:         docker run -p 5000:5000 registry
 
-FROM ubuntu:13.04
+#FROM ubuntu:13.04
+FROM bitaccess/ubuntu:precise
 
 RUN apt-get update; \
     apt-get install -y git-core build-essential python-dev \
